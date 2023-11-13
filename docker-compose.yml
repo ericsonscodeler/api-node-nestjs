@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: api-nestjs
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: nestjs
+      PGDAT: /data/postgres
+    volumes:
+      - ./data/pg:/data/postgres
