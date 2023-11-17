@@ -31,7 +31,16 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-    "title": "nova pergunta",
+    "title": "nova pergunta 2",
     "content": "teste pergunta ?"
 }
+
+###
+
+# @name Get_Questions
+GET {{baseURL}}/questions?page=2
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+
 
