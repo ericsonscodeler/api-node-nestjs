@@ -40,6 +40,10 @@ lerna-debug.log*
 #DOCKER
 data
 
+
+## Prisma Migration
+/prisma/migrations
+
 #Key
 private_key.pem
 public_key.pem
