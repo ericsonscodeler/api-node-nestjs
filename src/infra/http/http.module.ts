@@ -1,3 +1,4 @@
+import { CreateQuestionUseCase } from '@/domain/forum/application/use-cases/create-question'
 import { Module } from '@nestjs/common'
 import { DatabaseModule } from '../database/database.module'
 import { AuthenticateController } from './controller/authenticate.controller'
@@ -13,5 +14,6 @@ import { FetchRecentQuestionsController } from './controller/fetch-recent-questi
     CreateQuestionController,
     FetchRecentQuestionsController,
   ],
+  providers: [CreateQuestionUseCase],
 })
 export class HttpModule {}
