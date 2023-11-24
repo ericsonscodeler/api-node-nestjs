@@ -38,7 +38,7 @@ Authorization: Bearer {{authToken}}
 ###
 
 # @name Get_Questions
-GET {{baseURL}}/questions?page=2
+GET {{baseURL}}/questions?page=1
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
