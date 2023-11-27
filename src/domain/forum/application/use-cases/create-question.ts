@@ -37,6 +37,7 @@ export class CreateQuestionUseCase {
     })
 
     const questionAttachments = attachmentsIds.map((attachmentId) => {
+      console.log('aki')
       return QuestionAttachment.create({
         attachmentId: new UniqueEntityID(attachmentId),
         questionId: question.id,

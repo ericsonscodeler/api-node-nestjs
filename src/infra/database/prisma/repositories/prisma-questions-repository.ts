@@ -55,6 +55,7 @@ export class PrismaQuestionsRepository implements QuestionsRepository {
   }
 
   async create(question: Question): Promise<void> {
+    console.log('chamou')
     const data = PrismaQuestionMapper.toPrisma(question)
     await this.prisma.question.create({
       data,
